@@ -10,7 +10,9 @@ export default{
   methods: {
     fetchGoods(e){
       if(e.key == "Enter"){
-        console.log(`${this.api_key}`)
+        const goods = `${this.query}`
+        const eURL = encodeURIComponent(goods);
+        console.log(eURL)
       }
     }
   }
