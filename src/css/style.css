@@ -1,8 +1,50 @@
-.search-box{
-    
+html, body{
+    width: 100%;
+    background: #d8d8d8;
+}
+.search-box {
+    width: 320px;
+    height: 30px;
+}
+.search-box input.search-bar {
+    width: 100%;
+    height: 100%;
+    margin-left: 40px;
+    padding: 5px 15px;
+
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0px 16px 0px 16px;
+    transition: 0.4s;
+}
+.search-box input.search-bar:focus{
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 16px 0px 16px 0px;
+}
+div#items {
+    padding-top: 15px;
 }
 ul#v-for-rakutenGoods {
+    margin-right: 35px;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px 2em;
+    grid-template-rows: 128px 135px;
+    grid-template-columns: 2fr 2fr 2fr;
+}
+ul#v-for-rakutenGoods li{
+    list-style: none;
+}
+ul#v-for-rakutenGoods li .ItemWap{
+    width: 128px;
+    float: left;
+}
+ul#v-for-rakutenGoods li .ItemDescription{
+    margin-left: 130px;
+    font-size: 12px;
+    padding-left: 5px;
 }
