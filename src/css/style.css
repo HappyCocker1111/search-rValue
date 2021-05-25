@@ -32,13 +32,14 @@ div#items {
 }
 ul#v-for-rakutenGoods {
     display: grid;
-    grid-template-columns: repeat(3, 33%);
+    grid-template-columns: repeat(3, 32.5%);
     gap: 10px;
 }
 ul#v-for-rakutenGoods li{
     list-style: none;
     background: white;
     height: 128px;
+    box-shadow: 2px 3px 4px 2px rgb(0 0 0 / 19%);
 }
 ul#v-for-rakutenGoods li .ItemWap{
     float: left;
@@ -51,8 +52,7 @@ ul#v-for-rakutenGoods li a{
     text-decoration: none;
 }
 ul#v-for-rakutenGoods li .ItemDescription{
-    float: left;
-    width: 64%;
+    width: 90%;
     font-size: 12px;
     padding-left: 12px;
 }
