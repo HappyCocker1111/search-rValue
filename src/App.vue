@@ -5,7 +5,7 @@
         <input 
         type="text" 
         class="search-bar" 
-        placeholder="検索..."
+        placeholder="商品名..."
         v-model="query" 
         @keypress="fetchGoods"
         />

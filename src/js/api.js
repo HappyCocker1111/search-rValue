@@ -11,7 +11,7 @@ export default{
     fetchGoods(e){
       if(e.key == "Enter"){
         const eURL = encodeURIComponent(`${this.query}`)
-        fetch(`${this.url_base}${process.env.VUE_APP_MY_API_KEY}&keyword=${eURL}`)
+        fetch(`${this.url_base}${process.env.VUE_APP_MY_API_KEY}&keyword=${eURL}&sort=%2BitemPrice&minPrice=10`)
         .then(res => {
           return res.json();
         }).then(this.setResults);
