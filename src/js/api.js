@@ -19,6 +19,7 @@ export default{
     },
     setResults(results){
       this.rakutenGoods = results.Items;
+      console.log(this.rakutenGoods);
     },
   }
 }

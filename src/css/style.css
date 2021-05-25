@@ -1,6 +1,6 @@
 html, body{
     width: 100%;
-    background: #d8d8d8;
+    background: #f0efef;
 }
 .search-box {
     width: 320px;
@@ -28,23 +28,37 @@ html, body{
     border-radius: 16px 0px 16px 0px;
 }
 div#items {
-    padding-top: 15px;
+    margin-top: 40px;
 }
 ul#v-for-rakutenGoods {
-    margin-right: 35px;
     display: grid;
-    grid-template-rows: 128px 135px;
-    grid-template-columns: 2fr 2fr 2fr;
+    grid-template-columns: repeat(3, 33%);
+    gap: 10px;
 }
 ul#v-for-rakutenGoods li{
     list-style: none;
+    background: white;
+    height: 128px;
 }
 ul#v-for-rakutenGoods li .ItemWap{
-    width: 128px;
     float: left;
 }
+ul#v-for-rakutenGoods li .ItemWap .ItemImages img{
+    height: 128px;
+}
+ul#v-for-rakutenGoods li a{
+    color: #565656;
+    text-decoration: none;
+}
 ul#v-for-rakutenGoods li .ItemDescription{
-    margin-left: 130px;
+    float: left;
+    width: 64%;
     font-size: 12px;
-    padding-left: 5px;
+    padding-left: 12px;
+}
+ul#v-for-rakutenGoods li .ItemDescription p{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
 }
